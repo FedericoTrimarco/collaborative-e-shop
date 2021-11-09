@@ -1,4 +1,12 @@
-
+body{
+    background-image: url('../img/backgroundImage_foxtroat_Tavola\ disegno\ 1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+header{
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 /* UTILITIES */
 /* font-size */
 .fs-45px{
@@ -28,16 +36,16 @@
 
 /* HOVER */
 /* 4°section */
-.section-four .section-four-mini-pic{
+.carousel .carousel-mini-pic{
     opacity: 0.5;
     border-bottom: 3px solid transparent;
     cursor: pointer;
     transition: all 0.2s;
 }
-.section-four .section-four-mini-pic:hover{
+.carousel .carousel-mini-pic:hover{
     opacity: 1;
 }
-.section-four .section-four-mini-pic:focus{
+.carousel .carousel-mini-pic:focus{
     opacity: 1;
     border-bottom: 3px solid #0d6efd;
 }
@@ -48,10 +56,3 @@
     outline-offset: 2px;
 }
 
-.section-four-text .btn-outlin{
-    outline-color: #0d6efd;
-}
-
-header{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}

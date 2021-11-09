@@ -129,7 +129,7 @@ function genThumbails(array){
     for(let i = 0; i < array.length; i++) {
     
         rowMiniPic.innerHTML += `
-        <div id="${array[i].id}" class="col mb-3 text-center section-four-mini-pic" tabindex="0">
+        <div id="${array[i].id}" class="col mb-3 text-center carousel-mini-pic" tabindex="0">
             <img class="w-50 pb-1" src="${array[i].url}" alt="${array[i].title}">
             <p class="d-none d-md-block pt-3">${array[i].title}</p>
         </div>
