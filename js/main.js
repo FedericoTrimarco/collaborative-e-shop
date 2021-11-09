@@ -80,30 +80,88 @@ const products = [
         io: ['wifi, USB-C, Jack cuffie', 'waterproof']
     }
 ];
-
+// reference
 let bigPic = document.querySelector('.big-photo');
 let title = document.querySelector('.carousel-text > h2');
-let paragraph = document.querySelector('.carousel-text > p')
+let paragraph = document.querySelector('.carousel-text > p');
 let rowMiniPic = document.querySelector('.row-mini-pic');
+// buttons
+let btnCart = document.querySelector('.cart');
+let btnWishlist = document.querySelector('.wishlist');
 
-for(let i = 0; i < products.length; i++) {
+let cartBadge = document.querySelector('.cart-counter');
+let wishBadge = document.querySelector('.wish-counter');
+genThumbails(products);
 
-    rowMiniPic.innerHTML += `
-    <div id="${products[i].id}" class="col mb-3 text-center section-four-mini-pic" tabindex="0">
-        <img class="w-50 pb-1" src="${products[i].url}" alt="${products[i].title}">
-        <p class="d-none d-md-block pt-3">${products[i].title}</p>
-    </div>
-    `;
-}
 
-for(let i = 0; i < products.length; i++) {
+// addBadge(btnCart);
+// addBadge(btnWishlist);
+
+const badgeCartArray = [];
+const badgeWishlistArray = [];
+
+addBadge(btnCart, badgeCartArray, cartBadge);
+addBadge(btnWishlist, badgeWishlistArray, wishBadge);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************
+ F U N Z I O N I
+****************/
+// gen mini pic
+function genThumbails(array){
+    for(let i = 0; i < array.length; i++) {
     
-    let miniPic = document.getElementById(products[i].id)
+        rowMiniPic.innerHTML += `
+        <div id="${array[i].id}" class="col mb-3 text-center section-four-mini-pic" tabindex="0">
+            <img class="w-50 pb-1" src="${array[i].url}" alt="${array[i].title}">
+            <p class="d-none d-md-block pt-3">${array[i].title}</p>
+        </div>
+        `;
+    }
+    changeIntoBigPic(array);
+};
 
-    miniPic.addEventListener('click', function(){
 
-    bigPic.src = `${products[i].url}`;
-    title.innerHTML = `${products[i].title}`;
-    paragraph.innerHTML = `${products[i].description}`
-    });
+// change big pic
+function changeIntoBigPic(array){
+    for(let i = 0; i < array.length; i++) {
+        
+        let miniPic = document.getElementById(array[i].id)
+    
+        miniPic.addEventListener('click', function(){
+    
+        bigPic.src = `${array[i].url}`;
+        title.innerHTML = `${array[i].title}`;
+        paragraph.innerHTML = `${array[i].description}`
+        });
+    }
 }
+
+//  add to cart
+function addBadge(btn, array, badge){
+    btn.addEventListener('click', () => {
+        array.push(title.innerHTML)
+        console.table(array);
+        badge.innerHTML = `
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">${array.length}
+            <span class="visually-hidden">unread messages</span>
+        </span>`
+    });
+};
