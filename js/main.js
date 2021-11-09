@@ -79,17 +79,7 @@ const products = [
         description: 'Un chip superpotente. La velocità del 5G. Un sistema evoluto a doppia fotocamera. La resistenza del Ceramic Shield, più robusto di qualsiasi vetro per smartphone. E uno sfolgorante display OLED. iPhone 12 ha proprio tutto. Anche due formati perfetti.',
         io: ['wifi, USB-C, Jack cuffie', 'waterproof']
     }
-]
-
-
-// section-4-text__variables
-/* let miniPicId = ['mini-pic-1', 'mini-pic-2', 'mini-pic-3', 'mini-pic-4', 'mini-pic-5']
-
-let miniPicImg = ['./img/playstation-5-thumb.png', './img/joypad-thumb.png', './img/headset-thumb.png', './img/remote-thumb.png', './img/camera-thumb.jpg'];
-
-let minPicTitle = ['Console PS5', 'Controller wireless DualSense', 'Cuffie wireless con microfono PULSE 3', 'Telecomando media', 'Telecamera HD']
-
-let minPicParagraph = ["Sperimenta la nuova generazione di incredibili giochi PlayStation." , "Vivi l'esperienza con un controller con feedback aptico, grilletti adattivi e microfono incorporato", "Goditi un'esperienza wireless perfetta con un paio di cuffie con microfono ottimizzate per l'audio 3D della console PS5.", "Controlla facilmente film, servizi di streaming e altro ancora sulla tua console PS5 grazie a un'interfaccia intuitiva.", "Partecipa in prima persona alle tue trasmissioni e ai video della tua azione di gioco grazie alla nitidissima acquisizione di immagini Full HD."]; */
+];
 
 let bigPic = document.querySelector('.big-photo');
 let title = document.querySelector('.section-four-text > h2');
