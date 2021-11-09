@@ -93,29 +93,18 @@ let cartBadge = document.querySelector('.cart-counter');
 let wishBadge = document.querySelector('.wish-counter');
 genThumbails(products);
 
+// add obj to cart
 let badgeCartArray = [];
-let badgeWishlistArray = [];
-
 addBadge(btnCart, badgeCartArray, cartBadge);
+
+// add obj to wishlist
+let badgeWishlistArray = [];
 addBadge(btnWishlist, badgeWishlistArray, wishBadge);
 
 const btnShop = document.querySelector('.btn-shop');
 btnShop.addEventListener('click', () => {
     cartBadge.innerHTML = '';
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
