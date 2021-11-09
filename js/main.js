@@ -88,19 +88,22 @@ let rowMiniPic = document.querySelector('.row-mini-pic');
 // buttons
 let btnCart = document.querySelector('.cart');
 let btnWishlist = document.querySelector('.wishlist');
-
+// badge
 let cartBadge = document.querySelector('.cart-counter');
 let wishBadge = document.querySelector('.wish-counter');
+
+// create list product
 genThumbails(products);
 
-// add obj to cart
+// add items to cart
 let badgeCartArray = [];
 addBadge(btnCart, badgeCartArray, cartBadge);
 
-// add obj to wishlist
+// add items to wishlist
 let badgeWishlistArray = [];
 addBadge(btnWishlist, badgeWishlistArray, wishBadge);
 
+// purchase items and removal from cart
 const btnShop = document.querySelector('.btn-shop');
 btnShop.addEventListener('click', () => {
     cartBadge.innerHTML = '';
