@@ -82,9 +82,9 @@ const products = [
 ];
 
 let bigPic = document.querySelector('.big-photo');
-let title = document.querySelector('.section-four-text > h2');
-let paragraph = document.querySelector('.section-four-text > p')
-let rowMiniPic = document.querySelector('.row-mini-pic-ps5');
+let title = document.querySelector('.carousel-text > h2');
+let paragraph = document.querySelector('.carousel-text > p')
+let rowMiniPic = document.querySelector('.row-mini-pic');
 
 for(let i = 0; i < products.length; i++) {
 
@@ -95,7 +95,7 @@ for(let i = 0; i < products.length; i++) {
     </div>
     `;
 }
-// click on mini-PS5
+
 for(let i = 0; i < products.length; i++) {
     
     let miniPic = document.getElementById(products[i].id)

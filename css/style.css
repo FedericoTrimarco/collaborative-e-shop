@@ -4,8 +4,8 @@
 .fs-45px{
     font-size: 45px;
 }
-.fs-40px{
-    font-size: 40px;
+.fs-35px{
+    font-size: 35px;
 }
 .mx-w{
     max-width: 650px;
@@ -13,9 +13,13 @@
 .radius-15{
     border-radius: 15px;
 }
-/* .border-black{
+.border-black{
  border: 1px solid black;
-} */
+}
+/* colors */
+.cl-blue{
+    color: #0d6efd;
+}
 /*  */
 
 
