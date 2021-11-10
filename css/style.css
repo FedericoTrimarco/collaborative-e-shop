@@ -24,6 +24,9 @@ header{
 }
 /*  */
 
+.carousel-text{
+    min-height: 500px;
+}
 
 /* HOVER */
 /* 4°section */
@@ -41,8 +44,9 @@ header{
     border-bottom: 3px solid #0d6efd;
 }
 
+
 /* button */
 .btn-outlin:hover{
-    outline: 2px solid;
+    outline: 2px solid #0d6efd;
     outline-offset: 2px;
 }
